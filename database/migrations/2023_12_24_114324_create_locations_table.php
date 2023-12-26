@@ -18,8 +18,8 @@ return new class extends Migration
             $table->timestamp('Arr_time')->default(now());
             $table->string('starting_point');
             $table->string('ending_point');
-            $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
+            $table->datetime('created_at')->useCurrent();
+            $table->datetime('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 
