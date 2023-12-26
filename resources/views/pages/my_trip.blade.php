@@ -8,7 +8,7 @@
 @section('content')
     <div class="mb-5 d-flex justify-content-between align-items-center">
         <h2 class="">My Trip</h2>
-        <a class="btn btn-primary" href="#">Back</a>
+        <a class="btn btn-primary" href="{{ route('user.pages.index', ['from' => request('from'), 'to' => request('to')]) }}">Back</a>
     </div>
     @include('components.aleart')
     <div class="card p-5 m-5">
